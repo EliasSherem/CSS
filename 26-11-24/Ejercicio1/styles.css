@@ -1,0 +1,66 @@
+body {
+    background-color: #121212;
+    color: white;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    width: 25rem;
+    text-align: center;
+}
+
+.subheading {
+    color: #aaa;
+}
+
+.accordion {
+    background-color: #1e1e1e;
+    border-radius: 0.3125rem;
+    overflow: hidden;
+}
+
+.accordion-item {
+    border-bottom: 0.0625rem solid #333;
+    padding: 1rem;
+}
+
+.accordion-item:last-child {
+    border-bottom: none;
+}
+
+.accordion-header {
+    background: #262626;
+    padding: 0.9375rem;
+    font-size: 1rem;
+    text-align: left;
+    cursor: pointer;
+    border: none;
+    width: 100%;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.accordion-content {
+    background: #1e1e1e;
+    padding: 0.9375rem;
+    display: none;
+    text-align: left;
+    font-size: 0.875rem;
+    color: #ccc;
+}
+
+.accordion-header:after {
+    content: "▼";
+    font-size: 0.75rem;
+}
+
+.accordion-header.active:after {
+    content: "▲";
+}

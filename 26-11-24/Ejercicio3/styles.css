@@ -1,0 +1,73 @@
+body {
+    background-color: #121212;
+    color: white;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 1.25rem;
+}
+
+.container {
+    width: 37.5rem;
+    max-width: 100%;
+}
+
+.subheading {
+    color: #aaa;
+    margin-bottom: 1.25rem;
+}
+
+.card {
+    display: flex;
+    background: #1e1e1e;
+    border-radius: 0.5rem;
+    padding: 1.25rem;
+    margin-bottom: 0.9375rem;
+    align-items: center;
+    gap: 0.9375rem;
+}
+
+.card img {
+    width: 5rem;
+    height: 5rem;
+    background: #262626;
+    border-radius: 0.3125rem;
+}
+
+.card-content h3 {
+    margin: 0;
+}
+
+.card-content p {
+    color: #bbb;
+    font-size: 0.875rem;
+    margin: 0.625rem 0;
+}
+
+.card-content button {
+    background: transparent;
+    border: 0.0625rem solid white;
+    color: white;
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.3125rem;
+    cursor: pointer;
+}
+
+.card-content button:hover {
+    background: white;
+    color: black;
+}
+
+/* Responsive: Stack image on top when screen width is less than 576px */
+@media (max-width: 576px) {
+    .card {
+        flex-direction: column;
+    }
+
+    .card img {
+        margin-bottom: 0.625rem;
+    }
+}
